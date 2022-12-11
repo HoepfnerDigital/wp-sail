@@ -35,7 +35,7 @@
             "HoepfnerDigital\\WpSail\\": "src/"
         },
         "files": [
-            "command.php"
+            "add_commands.php"
         ]
     },
     "extra": {

@@ -38,6 +38,22 @@ Remove unnecessary dependency `illuminate/console`. Add `wp-cli/wp-cli` as futur
 
 Make the installation routine in src/Console compatible with WP-CLI. Also add those commands to WP-CLI via composers autoloader.
 
+## How to use
+
+```
+composer create-project roots/bedrock wp-project
+composer require hoepfner-digital/wp-sail
+```
+
+Make sure the local autoload is required as part of the WP-CLI lifecycle
+
+```
+# in wp-cli.yml
+require:
+    - vendor/autoload.php
+```
+
+
 ## License
 
 Laravel Sail is open-sourced software licensed under the [MIT license](LICENSE.md).
