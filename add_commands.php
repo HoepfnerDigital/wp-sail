@@ -1,7 +1,7 @@
 <?php
 
-use WpSail\Console\InstallCommand;
-use WpSail\Console\PublishCommand;
+use HoepfnerDigital\WpSail\Console\InstallCommand;
+use HoepfnerDigital\WpSail\Console\PublishCommand;
 
 if (defined('WP_CLI') && class_exists('WP_CLI', false)) {
 	if (file_exists(__DIR__ . '/vendor/autoload.php')) {

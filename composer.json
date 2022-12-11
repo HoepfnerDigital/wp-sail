@@ -1,5 +1,5 @@
 {
-    "name": "hoepfner-digtial/wp-sail",
+    "name": "hoepfner-digital/wp-sail",
     "description": "Docker files for running a basic WordPress application. Derived from Wordpress Sail",
     "keywords": ["wordpress", "docker"],
     "license": "MIT",
