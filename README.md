@@ -67,8 +67,10 @@ vendor/bin/wp sail:install --with=mysql,mailhog,redis
 Build the containers
 
 ```
+sail up
+
+# or re-build containers
 sail build --no-cache
-#vendor/bin/sail up -d
 ```
 
 ## License
