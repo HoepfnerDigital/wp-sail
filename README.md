@@ -40,6 +40,8 @@ Make the installation routine in src/Console compatible with WP-CLI. Also add th
 
 ## How to use
 
+Setup the initial project strucute
+
 ```
 composer create-project roots/bedrock wp-project
 composer require hoepfner-digital/wp-sail
@@ -53,6 +55,21 @@ require:
     - vendor/autoload.php
 ```
 
+Create the docker-compose.yml file
+
+```
+vendor/bin/wp sail:install
+
+# with the services you want, by default MySQL and Mailhog will be installed
+vendor/bin/wp sail:install --with=mysql,mailhog,redis
+```
+
+Build the containers
+
+```
+sail build --no-cache
+#vendor/bin/sail up -d
+```
 
 ## License
 
